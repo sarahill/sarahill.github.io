@@ -15,12 +15,14 @@ h2 {
 }
 
 .container {
+  display: flex;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 
 .site-header {
+  display: flex;
   margin-bottom: 24px;
 }
 
