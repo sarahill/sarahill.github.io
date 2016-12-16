@@ -35,3 +35,8 @@ h2 {
 .site-description {
   color: #666;
 }
+
+.box-row {
+  height: 200px;
+  overflow: hidden;
+}
