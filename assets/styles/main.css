@@ -25,11 +25,17 @@ h2 {
 
 .site-header {
   display: flex;
+  flex-direction: column;
   margin-bottom: 24px;
 }
 
 .site-title a {
   color: #FF5548;
+  text-decoration: none;
+}
+
+.site-subtitle {
+  color: #a6a6a6;
 }
 
 .site-description {
