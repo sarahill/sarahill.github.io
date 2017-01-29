@@ -8,11 +8,11 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .container {
@@ -28,7 +28,7 @@ h2 {
   margin-bottom: 24px;
 }
 
-.site-title {
+.site-title a {
   color: #FF5548;
 }
 
