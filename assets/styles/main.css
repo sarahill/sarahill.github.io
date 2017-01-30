@@ -46,3 +46,7 @@ h2 {
   height: 200px;
   overflow: hidden;
 }
+
+.box-row image {
+  width: 100%;
+}
