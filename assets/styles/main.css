@@ -42,11 +42,11 @@ h2 {
   color: #666;
 }
 
-.box-row {
+.project-image {
   height: 200px;
   overflow: hidden;
 }
 
-.box-row image {
+.project-image image {
   width: 100%;
 }
