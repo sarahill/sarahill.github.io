@@ -4405,7 +4405,7 @@ header {
     header .inline-list > li i {
       font-size: 1.5rem; }
 
-body.resume .site-title {
+body.resume .site-title, body.details .site-title {
   font-size: 24px;
   font-weight: 600; }
 
@@ -4472,6 +4472,9 @@ body.resume .site-title {
     transition: all .3s ease; }
     .main.portfolio .sm-thumbs:hover {
       opacity: .5; }
+    .main.portfolio .sm-thumbs.pt-dashboard {
+      background: transparent url("../images/pt-dashboard.png") no-repeat center top;
+      background-size: 130%; }
     .main.portfolio .sm-thumbs.kp-flatirons {
       background: transparent url("../images/kp-flatirons.png") no-repeat center bottom;
       background-size: 100%; }

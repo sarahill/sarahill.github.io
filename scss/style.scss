@@ -133,7 +133,7 @@ header {
 	}
 }
 
-body.resume {
+body.resume, body.details {
 	.site-title {
 		font-size: 24px;
 		font-weight: 600;
@@ -216,6 +216,10 @@ body.resume {
 		transition: all .3s ease;
 		&:hover {
 	    opacity: .5;
+		}
+		&.pt-dashboard {
+			background: transparent url('../images/pt-dashboard.png') no-repeat center top;
+			background-size: 130%;
 		}
 		&.kp-flatirons {
 			background: transparent url('../images/kp-flatirons.png') no-repeat center bottom;

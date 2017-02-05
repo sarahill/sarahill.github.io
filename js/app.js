@@ -9,6 +9,13 @@ $(document).foundation();
 
   var details = [
     {
+      name: 'Pivotal Tracker, Styleguide',
+      description: 'Research, Design, and Development; Tools: Sketch, Atom, Git',
+      image: 'images/pt-dashboard.png',
+      class: 'pt-dashboard',
+      link: 'pt-dashboard.html',
+    },
+    {
       name: 'Kapost, Gallery App',
       description: 'UX Research and Design, UI Design, Wireframes, Application Flows, Prototypes, HTML and SCSS; Tools: Sketch, Invision, Illustrator, Atom, Git',
       image: 'images/kp-gallery.png',
