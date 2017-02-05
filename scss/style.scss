@@ -56,6 +56,10 @@ body.details {
 .job-description {
 	color: #666;
 	line-height: 1.8;
+	a {
+		background: #eee;
+		padding: 0 1px;
+	}
 }
 
 .project-name {
