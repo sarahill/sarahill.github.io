@@ -55,7 +55,7 @@ body.details {
 
 .job-description {
 	color: #666;
-	font-weight: 300;
+	line-height: 1.8;
 }
 
 .project-name {
@@ -87,6 +87,9 @@ header {
 			display: inline-block;
 			.site-title {
 				display: inline-block;
+				&:hover {
+					opacity: .5;
+				}
 			}
 		}
 	}
@@ -127,16 +130,9 @@ header {
 }
 
 body.resume {
-	.name-title {
-		padding: rem-calc(12 15);
-		width: 100%;
-		@media only screen and (min-width: 64.063em) {
-			width: auto;
-			display: inline-block;
-		}
-		.site-title {
-			margin-bottom: 0;
-		}
+	.site-title {
+		font-size: 24px;
+		font-weight: 600;
 	}
 }
 

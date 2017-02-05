@@ -4349,7 +4349,7 @@ body.details a.button.lined {
 
 .job-description {
   color: #666;
-  font-weight: 300; }
+  line-height: 1.8; }
 
 .project-name {
   margin-top: 0.9375rem;
@@ -4374,6 +4374,8 @@ header {
       display: inline-block; }
       header .sm-info .name-title .site-title {
         display: inline-block; }
+        header .sm-info .name-title .site-title:hover {
+          opacity: .5; }
   header .inline-list {
     text-align: center;
     border-top: 1px solid #BABABA;
@@ -4400,15 +4402,9 @@ header {
     header .inline-list > li i {
       font-size: 1.5rem; }
 
-body.resume .name-title {
-  padding: 0.75rem 0.9375rem;
-  width: 100%; }
-  @media only screen and (min-width: 64.063em) {
-    body.resume .name-title {
-      width: auto;
-      display: inline-block; } }
-  body.resume .name-title .site-title {
-    margin-bottom: 0; }
+body.resume .site-title {
+  font-size: 24px;
+  font-weight: 600; }
 
 #view-resume {
   float: right; }
