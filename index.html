@@ -1,56 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Sara Hill - Product Designer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" ng-app="work" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Hill - Product Design</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
 
-<link rel="stylesheet" href="assets/styles/main.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
-</head>
+  <body>
+    <section class="sm-top">
+      <!-- begin header -->
+      <header class="row">
+        <div class="medium-7 columns sm-info">
+          <div class="name-title">
+            <a href="index.html"><h1 class="site-title">Sara McWhorter Hill</h1></a>
+          </div>
+        </div>
+        <div class="medium-5 columns sm-nav">
+          <ul class="inline-list">
+            <li><a href="resume.html" title="Resume"><i class="fa fa-file-o"></i></a></li>
+            <li><a href="https://dribbble.com/sarahill" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/saramcwhorter/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/sara.hill.22/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="large-12 columns jt-description">
+          <div class="row">
+            <div class="large-11 columns">
+              <h2 class="subheader job-title sm-home">Product Design & Illustration</h2>
+              <p class="job-description">Currently designing the future at <a href="http://www.pivotaltracker.com/" traget="_blank" title="Pivotal Tracker"><strong>Pivotal Tracker</strong></a> in Denver as Product Designer.</p>
+              <p class="job-description">I have a strong passion for UI and UX design, exploring new ideas, new technologies, and innovation. When I'm not creating online software you can find me outside enjoying the beauty of Colorado, tackling a trail run, or enjoying a local brew.
+                On weekends I go for a carefree frolic in the park while humming popular hits from the 80s, 90s, and today.</p>
+              <p class="job-description">Want to reach out? <a href="mailto:sarashill22@gmail.com" target="_top"><strong>Contact me</strong></a>. I would love to hear from you!</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- *end header -->
+    </section>
 
-<body>
-<div class="container">
-  <header class="site-header">
-    <h1 class="site-title">
-      <a href="index.html">Sara McWhorter Hill</a>
-    </h1>
-    <p class="site-subtitle">Product Designer</p>
-  </header>
-  <div class="main">
-    <!-- <section class="site-description">
-      <p class="site-description">Currently designing the future at Pivotal Tracker in Denver as Product Designer.</p>
-      <p class="site-description">I have a strong passion for UI and UX design, exploring new ideas, new technologies, and innovation. When I'm not creating online software you can find me outside enjoying the beauty of Colorado, tackling a trail run, or enjoying a local brew. On weekends I go for a carefree frolic in the park while humming popular hits from the 80s, 90s, and today.</p>
-      <p class="site-description">Want to reach out? Contact me. I would love to hear from you!</p>
-    </section> -->
-    <section class="recent-work">
+    <section class="main portfolio" ng-controller="WorkController as work">
       <div class="row">
-        <a class="project col-xs-6 col-sm-6 col-md-4 col-lg-4" href="/pivotal-tracker-dashboard/">
-          <div class="project-image">
-            <img src="assets/images/pivotal-tracker-dashboard.png" />
-          </div>
-          <div class="project-title">Pivotal Tracker Dashboard</div>
-        </a>
-        <a class="project col-xs-6 col-sm-6 col-md-4 col-lg-4" href="/pivotal-tracker-dashboard/">
-          <div class="project-image">
-            <img src="assets/images/pivotal-tracker-dashboard.png" />
-          </div>
-          <div class="project-title">project</div>
-        </a>
-        <a class="project col-xs-6 col-sm-6 col-md-4 col-lg-4" href="/pivotal-tracker-dashboard/">
-          <div class="project-image">
-            <img src="assets/images/pivotal-tracker-dashboard.png" />
-          </div>
-          <div class="project-title">project</div>
-        </a>
+        <div class="large-12 columns">
+          <h2 class="subheader description" style="margin-bottom: 0;">Recent Work</h2>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="medium-6 columns project" ng-repeat="project in work.projects">
+          <a href="{{project.link}}" class="sm-thumbs {{project.class}}" title="{{project.name}}"><strong>{{project.name}}</strong></a>
+          <h5 class="project-name">{{project.name}}</h5>
+          <p>{{project.description}}</p>
+        </div>
       </div>
     </section>
-  </div>
-</div>
+    <section class="footer">
+      <footer class="row">
+        <div class="large-12 columns">
+          &copy;
+          <script type="text/javascript">
+          	var currentYear = (new Date).getFullYear();
+            document.write(currentYear);
+          </script>
+           Sara McWhorter. All work created by Sara McWhorter unless otherwise stated.
+        </div>
+      </footer>
+    </section>
 
-</body>
+    <script src="bower_components/modernizr/modernizr.js"></script>
 
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
-
-<!-- https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/ -->
