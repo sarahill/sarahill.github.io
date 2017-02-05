@@ -19,11 +19,7 @@ a:hover {
 
 //custom-styles
 body {
-	background: darken(#fff, 4);
-	section.sm-top {
-		background: #fff;
-		border-bottom: 1px solid darken($secondary-color, 2);
-	}
+	background: #fff;
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
@@ -58,7 +54,8 @@ body.details {
 }
 
 .job-description {
-	color: $sm-text-color-lt;
+	color: #666;
+	font-weight: 300;
 }
 
 .project-name {
@@ -69,6 +66,10 @@ body.details {
 .project {
 	margin-bottom: rem-calc(50);
 	height: rem-calc(300);
+}
+
+.my-name {
+	color: $sm-color-highlight;
 }
 
 header {
@@ -82,39 +83,10 @@ header {
 	.sm-info {
 		padding-top: rem-calc(14);
 		padding-bottom: rem-calc(14);
-		.site-logo {
-			background: $sm-color-highlight;
-			width: rem-calc(89);
-			height: rem-calc(89);
-			line-height: rem-calc(83);
-			border-radius: 100%;
-			text-align: center;
-			display: inline-block;
-			float: none;
-			@media only screen and (min-width: 64.063em) {
-				float: left;
-			}
-		}
 		.name-title {
 			display: inline-block;
 			.site-title {
-				font-size: rem-calc(20);
 				display: inline-block;
-				& i {
-					height: rem-calc(35);
-					width: rem-calc(35);
-					line-height: rem-calc(35);
-					display: inline-block;
-					background: $sm-color-highlight;
-					border-radius: 100%;
-					text-align: center;
-					color: #fff;
-					margin-#{$opposite-direction}: rem-calc(5);
-				}
-			}
-			.job-title {
-				margin-top: 0;
-				font-weight: 300;
 			}
 		}
 	}
@@ -172,11 +144,6 @@ body.resume {
 	float: right;
 }
 
-.job-title {
-	&.sm-home {
-		font-weight: 300;
-	}
-}
 .main {
 	padding: rem-calc(15);
 	@media only screen and (min-width: 64.063em) {
@@ -195,9 +162,6 @@ body.resume {
 		margin-bottom: 0;
 		color: $sm-color-highlight;
 		font-weight: 400;
-	}
-	.description {
-		font-weight: 300;
 	}
 	.jobs {
 		border-left-width: 0px;
@@ -248,22 +212,11 @@ body.resume {
 		height: rem-calc(217);
 		width: 100%;
 		background: #fff;
-		box-shadow: 0 1px 3px darken($secondary-color, 20);
 		text-indent: -9999px;
 		transition: all .3s ease;
-		// &.kp-gallery {
-		// 	&:hover:after {
-		// 		content: '';
-		// 		width: 100%;
-		//     height: 100%;
-		//     top: -24px;
-		//     position: relative;
-		//     opacity: .5;
-		//     left: 0;
-		//     background: black;
-		//     display: block;
-		// 	}
-		// }
+		&:hover {
+	    opacity: .5;
+		}
 		&.kp-flatirons {
 			background: transparent url('../images/kp-flatirons.png') no-repeat center bottom;
 			background-size: 100%;
@@ -320,9 +273,14 @@ body.resume {
 }
 
 section.footer {
-	border-top: 1px solid darken($secondary-color, 2);
 	background: #fff;
 	padding-top: rem-calc(15);
 	padding-bottom: rem-calc(15);
 	font-size: rem-calc(14);
+}
+
+.subheader {
+	color: #333;
+	font-size: rem-calc(19);
+	margin-bottom: rem-calc(16);
 }
