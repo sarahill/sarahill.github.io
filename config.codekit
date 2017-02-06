@@ -4021,6 +4021,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/pt-tippy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 98549,
+		"inputAbbreviatedPath": "\/images\/pt-tippy.png",
+		"outputAbbreviatedPath": "\/images\/pt-tippy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/sketch-005 1.JPG": {
 		"fileType": 16384,
 		"ignore": 0,

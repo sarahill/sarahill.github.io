@@ -23,7 +23,7 @@ $(document).foundation();
       link: 'pt-dashboard.html',
     },
     {
-      name: 'Pivotal Tracker, Tippy',
+      name: 'Pivotal Tracker, Tippy the Tracker Turtle',
       description: 'Design and Illustration; Tools: Sketch, Illustrator',
       image: 'images/pt-tippy.png',
       class: 'pt-tippy',
