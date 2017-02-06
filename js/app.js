@@ -9,11 +9,25 @@ $(document).foundation();
 
   var details = [
     {
-      name: 'Pivotal Tracker, Styleguide',
-      description: 'Research, Design, and Development; Tools: Sketch, Atom, Git',
+      name: 'Pivotal Tracker, Story Activity',
+      description: 'Research and Design; Tools: Sketch, InVision',
+      image: 'images/pt-story-activity.png',
+      class: 'pt-story-activity',
+      link: 'pt-story-activity.html',
+    },
+    {
+      name: 'Pivotal Tracker, Dashboard',
+      description: 'Research and Design; Tools: Sketch, InVision',
       image: 'images/pt-dashboard.png',
       class: 'pt-dashboard',
       link: 'pt-dashboard.html',
+    },
+    {
+      name: 'Pivotal Tracker, Tippy',
+      description: 'Design and Illustration; Tools: Sketch, Illustrator',
+      image: 'images/pt-tippy.png',
+      class: 'pt-tippy',
+      link: 'pt-tippy.html',
     },
     {
       name: 'Kapost, Gallery App',
@@ -34,13 +48,6 @@ $(document).foundation();
       description: 'UX Research and Design, UI Design, Wireframes, Application Flows, HTML and SCSS; Tools: Sketch, Invision, Illustrator, Atom, Git',
       image: 'images/my-gradebooks.png',
       class: 'kp-campaign',
-      link: '#',
-    },
-    {
-      name: 'Kapost, Notification Email',
-      description: 'UX Research and Design, UI Design, Wireframes, Email and In App Notification Flows; Tools: Sketch, Invision, Illustrator',
-      image: 'images/kp-notifications.png',
-      class: 'kp-notifications',
       link: '#',
     },
     {

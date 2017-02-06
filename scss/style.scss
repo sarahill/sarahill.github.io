@@ -92,7 +92,7 @@ header {
 			.site-title {
 				display: inline-block;
 				&:hover {
-					opacity: .5;
+					opacity: .7;
 				}
 			}
 		}
@@ -215,11 +215,15 @@ body.resume, body.details {
 		text-indent: -9999px;
 		transition: all .3s ease;
 		&:hover {
-	    opacity: .5;
+	    opacity: .8;
+		}
+		&.pt-story-activity {
+			background: transparent url('../images/pt-story-activity.png') no-repeat center top;
+			background-size: 100%;
 		}
 		&.pt-dashboard {
-			background: transparent url('../images/pt-dashboard.png') no-repeat center top;
-			background-size: 130%;
+			background: transparent url('../images/pt-dashboard-thumb.png') no-repeat center top;
+			background-size: 100%;
 		}
 		&.kp-flatirons {
 			background: transparent url('../images/kp-flatirons.png') no-repeat center bottom;

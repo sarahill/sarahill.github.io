@@ -3988,6 +3988,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/pt-dashboard-thumb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69796,
+		"inputAbbreviatedPath": "\/images\/pt-dashboard-thumb.png",
+		"outputAbbreviatedPath": "\/images\/pt-dashboard-thumb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/pt-dashboard.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3995,6 +4006,17 @@
 		"initialSize": 180998,
 		"inputAbbreviatedPath": "\/images\/pt-dashboard.png",
 		"outputAbbreviatedPath": "\/images\/pt-dashboard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/pt-story-activity.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191166,
+		"inputAbbreviatedPath": "\/images\/pt-story-activity.png",
+		"outputAbbreviatedPath": "\/images\/pt-story-activity.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -23430,6 +23452,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pt-dashboard.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/pt-story-activity.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pt-story-activity.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

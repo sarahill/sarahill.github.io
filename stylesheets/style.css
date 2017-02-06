@@ -4378,7 +4378,7 @@ header {
       header .sm-info .name-title .site-title {
         display: inline-block; }
         header .sm-info .name-title .site-title:hover {
-          opacity: .5; }
+          opacity: .7; }
   header .inline-list {
     text-align: center;
     border-top: 1px solid #BABABA;
@@ -4471,10 +4471,13 @@ body.resume .site-title, body.details .site-title {
     text-indent: -9999px;
     transition: all .3s ease; }
     .main.portfolio .sm-thumbs:hover {
-      opacity: .5; }
+      opacity: .8; }
+    .main.portfolio .sm-thumbs.pt-story-activity {
+      background: transparent url("../images/pt-story-activity.png") no-repeat center top;
+      background-size: 100%; }
     .main.portfolio .sm-thumbs.pt-dashboard {
-      background: transparent url("../images/pt-dashboard.png") no-repeat center top;
-      background-size: 130%; }
+      background: transparent url("../images/pt-dashboard-thumb.png") no-repeat center top;
+      background-size: 100%; }
     .main.portfolio .sm-thumbs.kp-flatirons {
       background: transparent url("../images/kp-flatirons.png") no-repeat center bottom;
       background-size: 100%; }
