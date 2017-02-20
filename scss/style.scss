@@ -214,9 +214,9 @@ body.resume, body.details {
 		background: #fff;
 		text-indent: -9999px;
 		transition: all .3s ease;
-		// &:hover {
-	  //   opacity: .8;
-		// }
+		&:hover {
+	    opacity: .8;
+		}
 		&.pt-tippy {
 			background: transparent url('../images/pt-tippy.png') no-repeat 0 0;
 			background-size: 100%;
