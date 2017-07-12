@@ -4470,8 +4470,8 @@ body.resume .site-title, body.details .site-title {
     background: #fff;
     text-indent: -9999px;
     transition: all .3s ease; }
-    .main.portfolio .sm-thumbs.pt-tippy {
-      background: transparent url("../images/pt-tippy.png") no-repeat 0 0;
+    .main.portfolio .sm-thumbs.invite-dropdown {
+      background: transparent url("../images/invite-dropdown.png") no-repeat 0 0;
       background-size: 100%; }
     .main.portfolio .sm-thumbs.pt-story-activity {
       background: transparent url("../images/pt-story-activity.png") no-repeat center top;
