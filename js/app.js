@@ -23,10 +23,10 @@ $(document).foundation();
       link: 'pt-dashboard.html',
     },
     {
-      name: 'Pivotal Tracker, Tippy the Tracker Turtle',
-      description: 'Design and Illustration; Tools: Sketch, Illustrator',
-      image: 'images/pt-tippy.png',
-      class: 'pt-tippy',
+      name: 'Pivotal Tracker, Project Member Invites',
+      description: 'Research and Design; Tools: Sketch, InVision',
+      image: 'images/invite-dropdown.png',
+      class: 'invite-dropdown',
       link: 'pt-tippy.html',
     },
     {
