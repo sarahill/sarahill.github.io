@@ -27,7 +27,7 @@ $(document).foundation();
       description: 'Research and Design; Tools: Sketch, InVision',
       image: 'images/invite-dropdown.png',
       class: 'invite-dropdown',
-      link: 'pt-tippy.html',
+      link: '#',
     },
     {
       name: 'Kapost, Gallery App',
