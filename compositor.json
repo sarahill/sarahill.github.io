@@ -1,0 +1,98 @@
+{
+  "name": "sarahill/sarahill.github.io",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://sarahill.github.io",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/sarahill/sarahill.github.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/foundation-libsass-template",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "sarahill.github.io",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "sarahill.github.io: ",
+          "url": "https://sarahill.github.io"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "sarahill",
+          "repo": "sarahill.github.io"
+        }
+      ],
+      "text": "v0.0.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>Personal portfolio site of Sara Hill, Product Designer.</p>\n<h3>About me</h3>\n<p>Currently designing the future at Pivotal Tracker in Denver as Product Designer.</p>\n<p>I have a strong passion for UI and UX design, exploring new ideas, new technologies, and innovation. When I&apos;m not creating online software you can find me outside enjoying the beauty of Colorado, tackling a trail run, or enjoying a local brew. On weekends I go for a carefree frolic in the park while humming popular hits from the 80s, 90s, and today.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/sarahill/sarahill.github.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/sarahill",
+          "text": "sarahill"
+        }
+      ]
+    }
+  ]
+}
