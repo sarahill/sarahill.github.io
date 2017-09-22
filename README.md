@@ -1,7 +1,12 @@
 # sarahill.github.io
-
 The portfolio site of Sara Hill, Product Designer & Illustrator.
 
+I’m a Denver based product designer working on Pivotal Tracker. Before that, I lead design at
+Kapost and worked on realizing their design system. I like identifying patterns, drinking a
+Colorado beer, and tackling a trail run.
+
+## built using Tachyons
+http://tachyons.io/
 
 ## local development
 1. cd into your projects root folder
