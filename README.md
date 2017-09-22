@@ -5,7 +5,7 @@ I’m a Denver based product designer working on Pivotal Tracker. Before that, I
 Kapost and worked on realizing their design system. I like identifying patterns, drinking a
 Colorado beer, and tackling a trail run.
 
-## built using Tachyons
+## built with Tachyons
 http://tachyons.io/
 
 ## local development
