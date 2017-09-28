@@ -13,7 +13,7 @@ http://tachyons.io/
 
 2. Start the app
   - This will run browser sync so your browser reloads when making updates.
-  `npm start`
+  - `npm start`
   
 ## new set-up
 1. cd into your projects root folder
@@ -21,11 +21,11 @@ http://tachyons.io/
 2. Install Node
 
 3. Install Browsersync
-  `npm install -g browser-sync`
+  - `npm install -g browser-sync`
 
 4. Run Browsersync
   - The files specified may be different for you.
-  `browser-sync start --server --files "css/*.css"`
+  - `browser-sync start --server --files "css/*.css"`
 
   - If you are already running a local server
-  `browser-sync start --proxy "myproject.dev" --files "css/*.css"`
+  - `browser-sync start --proxy "myproject.dev" --files "css/*.css"`
