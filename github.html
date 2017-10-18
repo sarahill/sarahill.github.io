@@ -39,7 +39,7 @@
       </div>
       <div class="mt5">
         <h3 class="mb0 black-60">Uncovering Opportunities</h3>
-        <p class="lh-copy black-80">We were getting a lot of feedback from our
+        <p class="lh-copy black-80">We were getting a lot of feedback from
           users that they needed better insight into the status of their code for
           any given feature. We were hearing it from our customers and we were
           feeling the pain ourselves.
@@ -49,7 +49,7 @@
           to them. We wanted to know how developers were working inside of
           Tracker and how we could improve the code-to-story experience.
         </p>
-        <p class="lh-copy black-80">Through talking to customers, we found that
+        <p class="lh-copy black-80">We found that
           a lot of users that weren't using the current GitHub integration didn't actually
           know it existed, and the ones that were using it didn't get much value out
           of just seeing commits. Commits can be frequent and have the potential to
@@ -57,7 +57,7 @@
         </p>
         <p class="lh-copy black-80">We also learned that it wasn't just developers that
           cared about what state the code was in. Testers, PMs, and anyone else
-          responsible for any part of a story's delivery and acceptance, wanted to
+          responsible for a story's delivery and acceptance, wanted to
           know when checks for a branch or PR passed. This was a signal that the story
           was ready for the next step.
         </p>
@@ -66,36 +66,33 @@
         <h3 class="mb0 black-60">Exploration</h3>
         <p class="lh-copy black-80">I started to get familiar with GitHub, GitLab,
           and BitBucket to get an understanding of how the platforms compared. Our focus
-          was GitHub to start, but we would eventually scale to support other code managment
+          was GitHub to start, but we would want to eventually scale to support other code managment
           platforms.
         </p>
-        <p class="lh-copy black-80">Once I had this information, I started putting ideas on
-          paper. I sketched out several ideas and shared them with the team. Next, I started
-          to create concepts in Sketch. I explored concepts
-          around introducing pull requests and branches and surfacing the status of build
-          checks for each. I worked closely with the developers throughout the process to
-          get feedback from a technical perspective.
+        <p class="lh-copy black-80">Once I had this information, I started putting ideas on paper. I sketched out several ideas and shared them with the team. Next, I started to create concepts in Sketch. I explored concepts around introducing pull requests and branches and surfacing the status of build checks for each. I worked closely with the developers throughout the process to get feedback from a technical perspective.
         </p>
-        <p class="lh-copy black-80">One thing I wasn't sure about was whether these new code
-          bricks should remain in the story activity alongside commits or if they should
-          be elevated.
+        <img class="mt4" src="images/exploration@2x.png" alt="Code exploration within a story">
+        <p class="mt4 lh-copy black-80">One thing I wasn't sure about was whether these new code bricks should remain in the story activity alongside commits or if they should be elevated. As a team, we decided to try an experiment. We had actually built a script to automate the code-story-relationship for our own team. It worked by identifying pull request links in the story description field. From that, we came up with the idea to generate a code brick for any PR or branch link added to a story's description. We used this as a way to test out elevating the code into its own section and to learn what information we should show for PRs and branches.
+        </p>
+        <span class="db tc"><img class="mt4" src="images/code-brick-testing@2x.png" width="329px" height="165px" alt="Code bricks, early days"></span>
+        <p class="mt4 lh-copy black-80">
+        </p>
+        <p class="lh-copy black-80">Next, we put the feature behind a flag so that we could turn it on in isolation for testing. Overall, the response was positive. Users were noticing the blocks pretty quickly and were able to understand the information displayed. Since the feedback was widely positive, we continued making improvements.
         </p>
       </div>
-      <img class="mt4" src="images/code-exploration.png" alt="Code exploration within a story">
-      <p class="lh-copy black-80">As a first step, the team started building a pretty bare
-        bones version of the pull request and branch cards as manual attachments.
-      </p>
-      <img class="mt4" src="images/add-code.png" alt="Adding code to a story">
       <div class="mt5">
-        <h3 class="mb0 black-60">Onboarding</h3>
-        <p class="lh-copy black-80">Now we needed to make the GitHub integration,
-          and integrations in general, more discoverable. We found that users would
-          stumble upon
+        <h3 class="mb0 black-60">Making It Real</h3>
+        <p class="lh-copy black-80">I worked with the development team to make the code blocks more flexible. We removed the functionality of automatically creating code blocks when a GitHub link was present in the description. Instead, users could either manually attach a link or include the story ID in a PR or branch name to push the code to Tracker.  </p>
+        <p class="lh-copy black-80">I used Sketch to mock up flows and touchpoints for attaching the code. I also needed to think about authentication and how that affected what the user could see. Tracker had just started working with larger enterprise customers, so we needed to be thoughtful about permissions. For this, I also worked with the test and support team to make sure I wasn't missing anything.
         </p>
       </div>
-      <img class="mt4" src="images/simple-walkthrough.png" alt="Onboarding simple walkthrough">
-      <img class="mt4" src="images/extended-walkthrough.png" alt="Onboarding extended walktrhough">
-      <img class="mt4" src="images/Tooltip-callouts.png" alt="Onboarding with Tooltips">
+      <span class="db tc"><img class="mt4" src="images/pr-blocks@2x.png" alt="Pull Request Bricks"></span>
+      <span class="db tc"><img class="mt4" src="images/add-code@2x.png" alt="Adding code to a story"></span>
+      <div class="mt5">
+        <h3 class="mb0 black-60">Next Steps</h3>
+        <p class="lh-copy black-80">With the design of this feature out of the way, the developers are now working hard to bring this to the rest of our customer base. My primary focus is now shifting to onboarding and how we can measure success through adoption, although I continue to support the developers.
+        </p>
+      </div>
       <div class="mt5">
         <h3 class="mb0 black-60">What I Learned</h3>
         <p class="lh-copy black-80">
