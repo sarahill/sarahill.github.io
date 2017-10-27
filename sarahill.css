@@ -11,10 +11,11 @@ body { background: #fbfbfc; }
   background-size: cover;
 }
 
+/* 
 .bg-highlight {
   padding: 1px 4px;
   background: #ffebbe;
-}
+} */
 
 /* flexbox */
 .d-flex { display: flex; }
