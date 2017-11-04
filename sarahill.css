@@ -11,11 +11,21 @@ body { background: #fbfbfc; }
   background-size: cover;
 }
 
-/* 
-.bg-highlight {
-  padding: 1px 4px;
-  background: #ffebbe;
-} */
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-image { width: 48%; }
+}
 
 /* flexbox */
 .d-flex { display: flex; }
