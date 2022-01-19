@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/sarahill/sarahill.github.io.png?columns=all)](https://waffle.io/sarahill/sarahill.github.io?utm_source=badge)
 # sarahill.github.io
 The portfolio site of Sara Hill, Product Designer & Illustrator.
 
