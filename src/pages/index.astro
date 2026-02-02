@@ -1,0 +1,187 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Sara Hill - Product Designer" />
+		<title>Sara Hill</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		<script is:inline>
+			// Check for saved theme preference or default to dark
+			const getTheme = () => {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+					return localStorage.getItem('theme');
+				}
+				return 'dark';
+			};
+			const theme = getTheme();
+			document.documentElement.classList.toggle('light', theme === 'light');
+		</script>
+	</head>
+	<body class="min-h-screen bg-neutral-950 text-white light:bg-neutral-50 light:text-neutral-950 transition-colors duration-300">
+		<div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+			<!-- Header with theme toggle -->
+			<header class="flex justify-end pt-8 md:pt-12">
+				<button 
+					id="theme-toggle"
+					class="text-white light:text-neutral-950 hover:opacity-70 transition-opacity" 
+					aria-label="Toggle theme"
+				>
+					<!-- Moon icon (shown in dark mode) -->
+					<svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+					</svg>
+					<!-- Sun/Circle icon (shown in light mode) -->
+					<svg id="sun-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+						<circle cx="12" cy="12" r="9" />
+					</svg>
+				</button>
+			</header>
+
+			<script>
+				const toggle = document.getElementById('theme-toggle');
+				const moonIcon = document.getElementById('moon-icon');
+				const sunIcon = document.getElementById('sun-icon');
+				const html = document.documentElement;
+
+				// Set initial icon state
+				const updateIcons = () => {
+					const isLight = html.classList.contains('light');
+					moonIcon?.classList.toggle('hidden', isLight);
+					sunIcon?.classList.toggle('hidden', !isLight);
+				};
+				updateIcons();
+
+				toggle?.addEventListener('click', () => {
+					const isLight = html.classList.contains('light');
+					html.classList.toggle('light', !isLight);
+					localStorage.setItem('theme', isLight ? 'dark' : 'light');
+					updateIcons();
+				});
+			</script>
+
+<!-- Main content -->
+			<main class="pt-12 md:pt-16 max-w-xl mx-auto">
+				<div>
+					<h1 class="text-3xl font-normal tracking-tight font-serif italic">
+						Sara Hill
+					</h1>
+					
+					<p class="mt-6 text-base md:text-lg leading-relaxed text-white light:text-neutral-900">
+						Hi, I'm Sara Hill, a designer based in Penticton, British Columbia, currently at Shopify. Most of my time goes into Design Systems—making sure other designers have what they need to do good work without reinventing the wheel. Lately, that's meant building tools with AI that are changing how designers actually work.
+					</p>
+					
+					<p class="mt-6 text-base md:text-lg leading-relaxed text-white light:text-neutral-900">
+						Previously at Pivotal Tracker, Kapost, and Blackboard.
+					</p>
+				</div>
+			</main>
+
+			<!-- Project cards -->
+			<section id="work" class="pt-32 md:pt-40 pb-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+					<!-- Card 1 - Polaris -->
+					<div class="relative aspect-[5/6] rounded-2xl overflow-hidden">
+						<img src="/images/polaris.png" alt="Polaris design system" class="w-full h-full object-cover" />
+						<div class="absolute bottom-0 left-0 right-0 p-5">
+							<h3 class="font-medium text-white">Polaris design system</h3>
+							<p class="text-sm text-white/70 mt-1">Components, patterns, and tools built for Shopify.</p>
+						</div>
+					</div>
+					<!-- Card 2 - Playground -->
+					<div class="relative aspect-[5/6] rounded-2xl overflow-hidden">
+						<img src="/images/playground.png" alt="Admin Playground" class="w-full h-full object-cover" />
+						<div class="absolute bottom-0 left-0 right-0 p-5">
+							<h3 class="font-medium text-white">Admin Playground</h3>
+							<p class="text-sm text-white/70 mt-1">An AI powered prototyping tool built for crafters at Shopify.</p>
+						</div>
+					</div>
+					<!-- Card 3 - Polaris small icons -->
+					<div class="relative aspect-[5/6] rounded-2xl overflow-hidden">
+						<img src="/images/icons.png" alt="Polaris small icons" class="w-full h-full object-cover" />
+						<div class="absolute bottom-0 left-0 right-0 p-5">
+							<h3 class="font-medium text-white">Polaris small icons</h3>
+							<p class="text-sm text-white/70 mt-1">Icons optimized for specific small sizes across platforms.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="py-16 md:py-24">
+				<!-- Current favorites -->
+				<div class="flex flex-col items-center mb-12">
+					<p class="text-neutral-500 text-sm mb-4">Current favorites</p>
+					<div class="flex gap-4">
+						<a 
+							href="https://www.hermanosgutierrez.ch/" 
+							target="_blank"
+							rel="noopener noreferrer"
+							class="block w-24 h-24 rounded-xl overflow-hidden hover:scale-105 transition-transform"
+						>
+							<img 
+								src="/images/hermanos-gutierrez.png" 
+								alt="Hermanos Gutiérrez" 
+								class="w-full h-full object-cover"
+							/>
+						</a>
+						<a 
+							href="https://www.soe-etc.com/" 
+							target="_blank"
+							rel="noopener noreferrer"
+							class="block w-24 h-24 rounded-xl overflow-hidden hover:scale-105 transition-transform"
+						>
+							<img 
+								src="/images/soe.jpg" 
+								alt="SOE Cafe" 
+								class="w-full h-full object-cover"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- Info row -->
+				<div class="flex items-center justify-center gap-6 md:gap-10 text-sm">
+					<span id="local-time" class="text-neutral-400 light:text-neutral-500">--:-- PM</span>
+					<span class="text-neutral-400 light:text-neutral-500">Penticton, BC</span>
+					<a 
+						href="mailto:hello@sarahill.com" 
+						class="inline-flex items-center gap-1 text-white light:text-neutral-900 hover:opacity-70 transition-opacity"
+					>
+						Email
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M5 12h14" />
+							<path d="m12 5 7 7-7 7" />
+						</svg>
+					</a>
+				</div>
+			</footer>
+
+			<script>
+				// Update local time
+				function updateTime() {
+					const timeEl = document.getElementById('local-time');
+					if (timeEl) {
+						const now = new Date();
+						const time = now.toLocaleTimeString('en-US', { 
+							hour: 'numeric', 
+							minute: '2-digit',
+							hour12: true,
+							timeZone: 'America/Vancouver'
+						});
+						timeEl.textContent = time;
+					}
+				}
+				updateTime();
+				setInterval(updateTime, 1000);
+			</script>
+		</div>
+	</body>
+</html>

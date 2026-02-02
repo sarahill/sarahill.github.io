@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --font-family-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

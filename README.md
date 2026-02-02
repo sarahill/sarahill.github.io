@@ -1,31 +1,43 @@
-# sarahill.github.io
-The portfolio site of Sara Hill, Product Designer & Illustrator.
+# Astro Starter Kit: Minimal
 
-I’m a Denver based product designer working on Pivotal Tracker. Before that, I lead design at
-Kapost and worked on realizing their design system. I like identifying patterns, drinking a
-Colorado beer, and tackling a trail run.
+```sh
+npm create astro@latest -- --template minimal
+```
 
-## built with Tachyons
-http://tachyons.io/
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## local development
-1. cd into your projects root folder
+## 🚀 Project Structure
 
-2. Start the app
-  - This will run browser sync so your browser reloads when making updates.
-  - `npm start`
-  
-## new set-up
-1. cd into your projects root folder
+Inside of your Astro project, you'll see the following folders and files:
 
-2. Install Node
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-3. Install Browsersync
-  - `npm install -g browser-sync`
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-4. Run Browsersync
-  - The files specified may be different for you.
-  - `browser-sync start --server --files "css/*.css"`
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-  - If you are already running a local server
-  - `browser-sync start --proxy "myproject.dev" --files "css/*.css"`
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
